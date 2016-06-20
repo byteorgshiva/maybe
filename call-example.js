@@ -9,6 +9,15 @@ var person = {
     city: 'Springfield',
   };
 
+var person1 = {
+    name: 'Homer Simpson',
+    street: '123 Fake St.',
+    address: {
+      state: 133,
+    },
+    city: 'Springfield',
+  };
+  
 console.log(Maybe(person).bind(function (p) {
     return p.log;
   }).bind(function (a) {
